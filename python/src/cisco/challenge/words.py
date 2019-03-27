@@ -46,14 +46,11 @@ def process_text(text):
 
 if __name__ == "__main__":
 
-    if len(sys.argv) == 2:
-        if sys.argv[1] == '--help':
-            print "Usage: python words.py <file path>"
-        else:
-            try:
-                with open(sys.argv[1], 'r+') as f:
-                    process_text(f.read())
-            except Exception, e:
-                print e.message
+    if len(sys.argv) != 2 or sys.argv[1] == '--help':
+        print "Usage: python words.py <file path>"
     else:
-        print "Invalid file name entered!"
+        try:
+            with open(sys.argv[1], 'r+') as f:
+                process_text(f.read())
+        except Exception, e:
+            print "Error opening file! - " + str(e)
