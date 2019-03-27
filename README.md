@@ -1,6 +1,6 @@
 # cisco-words
 
-##Word Count
+## Word Count
 
 Write a quick and dirty program (Shell, Python, Perl, Java, Lisp, C++, APL, or whatever) to produce a count of all the different "words" in a text file. Use any definition of word that makes logical sense or makes your job easy. 
 
@@ -28,10 +28,11 @@ The output might look like this:
 
 For this input file, the word "a" occured 17 times, "the" 14 times, etc.
 
-###Running the program
+### Running the program
 
-> python words.py file_path
-
+```
+> python words.py <file_path>
+```
 
 
  
